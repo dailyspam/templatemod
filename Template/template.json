@@ -2610,8 +2610,8 @@
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/torrents",
-          "container": "/downloads"
+          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data",
+          "container": "/data"
         }
       ]
     },
