@@ -41,17 +41,17 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Adguard/Workdir",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Adguard/Workdir",
           "container": "/opt/adguardhome/work"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Adguard/Conf",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Adguard/Conf",
           "container": "/opt/adguardhome/conf"
         }
       ]
     },
     {
-      "categories": ["Music"],
+      "categories": ["music"],
       "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
       "env": [
         {
@@ -85,23 +85,23 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Music",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/music",
           "container": "/music"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Airsonic/Playlists",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Airsonic/Playlists",
           "container": "/playlists"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Podcasts",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Podcasts",
           "container": "/podcasts"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Airsonic/Media",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Airsonic/Media",
           "container": "/media"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Airsonic/",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Airsonic/",
           "container": "/config"
         }
       ]
@@ -126,13 +126,13 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Authelia",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Authelia",
           "container": "/etc/authelia/"
         }
       ]
     },
     {
-      "categories": ["Video", "Music"],
+      "categories": ["Video", "music"],
       "description": "Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
       "env": [
         {
@@ -160,22 +160,22 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Bazarr",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Bazarr",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/media/tv",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/media/tv",
           "container": "/tv"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/media/movies",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/media/movies",
           "container": "/movies"
         }
       ]
     },
     {
-      "categories": ["Music"],
-      "description": "The purpose of beets is to get your music collection right once and for all. It catalogs your collection, automatically improving its metadata as it goes using the MusicBrainz database. Then it provides a bouquet of tools for manipulating and accessing your music.",
+      "categories": ["music"],
+      "description": "The purpose of beets is to get your music collection right once and for all. It catalogs your collection, automatically improving its metadata as it goes using the musicBrainz database. Then it provides a bouquet of tools for manipulating and accessing your music.",
       "env": [
         {
           "default": "1000",
@@ -198,15 +198,15 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Beets",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Beets",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Downloads",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Downloads",
           "container": "/downloads"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Music",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/music",
           "container": "/music"
         }
       ]
@@ -225,7 +225,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Vaultwarden",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Vaultwarden",
           "container": "/data"
         }
       ]
@@ -260,15 +260,15 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Books",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Books",
           "container": "/books"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/Podcasts",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Files/Podcasts",
           "container": "/podcast"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Booksonic",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Booksonic",
           "container": "/config"
         }
       ]
@@ -339,11 +339,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Books",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Books",
           "container": "/books"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Cops",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Cops",
           "container": "/config"
         }
       ]
@@ -374,11 +374,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Books",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Books",
           "container": "/books"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Calibre-web",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Calibre-web",
           "container": "/config"
         }
       ]
@@ -450,7 +450,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Chowdown",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Chowdown",
           "container": "/config"
         }
       ]
@@ -497,7 +497,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Code-Server",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Code-Server",
           "container": "/config"
         }
       ]
@@ -527,7 +527,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Codiad",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Codiad",
           "container": "/config"
         }
       ]
@@ -557,21 +557,21 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Couchpotato",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Couchpotato",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/torrents",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/torrents",
           "container": "/downloads"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/media/movies",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/media/movies",
           "container": "/movies"
         }
       ]
     },
     {
-      "categories": ["Music"],
+      "categories": ["music"],
       "description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
       "env": [
         {
@@ -594,11 +594,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Daapd",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Daapd",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Music",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/music",
           "container": "/music"
         }
       ]
@@ -616,7 +616,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Dashmachine",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Dashmachine",
           "container": "/dashmachine/dashmachine/user_data"
         }
       ]
@@ -647,17 +647,17 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Davos",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Davos",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Downloads",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Downloads",
           "container": "/downloads"
         }
       ]
     },
     {
-      "categories": ["Other", "Music"],
+      "categories": ["Other", "music"],
       "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
       "image": "registry.gitlab.com/bockiii/deemix-docker",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/deemix.png",
@@ -670,11 +670,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/DeeMix",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/DeeMix",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Downloads",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Downloads",
           "container": "/downloads"
         }
       ]
@@ -708,11 +708,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Deluge",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Deluge",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/torrents",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/torrents",
           "container": "/downloads"
         }
       ],
@@ -743,7 +743,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Domoticz",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Domoticz",
           "container": "/config"
         }
       ]
@@ -807,7 +807,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Duplicati",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Duplicati",
           "container": "/config"
         },
         {
@@ -822,7 +822,7 @@
       ]
     },
     {
-      "categories": ["Video", "Music", "Photos"],
+      "categories": ["Video", "music", "Photos"],
       "description": "Emby organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
       "env": [
         {
@@ -850,15 +850,15 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Emby",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Emby",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/media/tv",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/media/tv",
           "container": "/data/tvshows"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/media/movies",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/media/movies",
           "container": "/data/movies"
         }
       ]
@@ -877,7 +877,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/EmbyStat",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/EmbyStat",
           "container": "/config"
         }
       ]
@@ -896,11 +896,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/FileBrowser",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/FileBrowser",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Config",
           "container": "/myfiles"
         }
       ]
@@ -930,7 +930,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/freshrss",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/freshrss",
           "container": "/config"
         }
       ]
@@ -959,15 +959,15 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Gazee",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Gazee",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Comics",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Comics",
           "container": "/comics"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Gazee",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Gazee",
           "container": "/mylar"
         }
       ]
@@ -986,7 +986,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Guacamole",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Guacamole",
           "container": "/config"
         }
       ]
@@ -1020,13 +1020,13 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Grocy",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Grocy",
           "container": "/config"
         }
       ]
     },
     {
-      "categories": ["Video", "Music", "Other"],
+      "categories": ["Video", "music", "Other"],
       "description": "HTPC Manager, a front end for many htpc related applications. Uses the Hellowlol HTPC Manager fork.",
       "env": [
         {
@@ -1050,13 +1050,13 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/HTPCmanager",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/HTPCmanager",
           "container": "/config"
         }
       ]
     },
     {
-      "categories": ["Music"],
+      "categories": ["music"],
       "description": "Headphones is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.",
       "env": [
         {
@@ -1080,15 +1080,15 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Headphones",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Headphones",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/torrents",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/torrents",
           "container": "/Downloads"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Music",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/music",
           "container": "/music"
         }
       ]
@@ -1118,7 +1118,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Heimdall",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Heimdall",
           "container": "/config"
         }
       ]
@@ -1149,11 +1149,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Homer/assets",
+					"bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Homer/assets",
 					"container": "/www/assets"
 				},
 				{
-					"bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Homer",
+					"bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Homer",
 					"container": "/www/config.yml"
 				}
 			]
@@ -1171,7 +1171,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/huginn",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/huginn",
           "container": "/var/lib/mysql"
         }
       ]
@@ -1242,17 +1242,17 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Jackett",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Jackett",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Downloads",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Downloads",
           "container": "/downloads"
         }
       ]
     },
     {
-      "categories": ["Video", "Music", "Photos"],
+      "categories": ["Video", "music", "Photos"],
       "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
       "env": [
         {
@@ -1280,15 +1280,15 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Jellyfin",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Jellyfin",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/media/tv",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/media/tv",
           "container": "/data/tvshows"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/media/movies",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/media/movies",
           "container": "/data/movies"
         }
       ]
@@ -1318,7 +1318,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Kodi",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Kodi",
           "container": "/config"
         }
       ]
@@ -1419,7 +1419,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/LetsEncrypt",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/LetsEncrypt",
           "container": "/config"
         }
       ]
@@ -1437,13 +1437,13 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/LibreSpeed",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/LibreSpeed",
           "container": "/config"
         }
       ]
     },
     {
-      "categories": ["Downloaders", "Music"],
+      "categories": ["Downloaders", "music"],
       "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
       "env": [
         {
@@ -1467,11 +1467,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Lidarr",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Lidarr",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/torrents",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/torrents",
           "container": "/data"
         }
       ]
@@ -1501,11 +1501,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Lychee",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Lychee",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Pictures",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Pictures",
           "container": "/pictures"
         }
       ]
@@ -1540,7 +1540,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Mariadb",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Mariadb",
           "container": "/config"
         }
       ]
@@ -1599,15 +1599,15 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Medusa",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Medusa",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/media/tv",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/media/tv",
           "container": "/tv"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Downloads",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Downloads",
           "container": "/downloads"
         }
       ]
@@ -1666,7 +1666,7 @@
       "type": 1
     },
     {
-      "categories": ["Other", "Music"],
+      "categories": ["Other", "music"],
       "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.",
       "image": "linuxserver/mstream:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mstream.png",
@@ -1678,11 +1678,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Mstream",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Mstream",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Downloads",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Downloads",
           "container": "/music"
         }
       ]
@@ -1720,22 +1720,22 @@
           "container": "/etc/localtime"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/Config/Murmur",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Files/Config/Murmur",
           "container": "/opt/murmur/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/Murmur/data",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Files/Murmur/data",
           "container": "/opt/murmur/data"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/Murmur/log",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Files/Murmur/log",
           "container": "/opt/murmur/log"
         }
       ]
     },
     {
-      "categories": ["Music", "Other", "Tools"],
-      "description": "MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
+      "categories": ["music", "Other", "Tools"],
+      "description": "musicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
       "env": [
         {
           "label": "BRAINZCODE",
@@ -1759,15 +1759,15 @@
       "platform": "linux",
       "ports": ["5000:5000/tcp"],
       "restart_policy": "unless-stopped",
-      "title": "MusicBrainz",
+      "title": "musicBrainz",
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/MusicBrainz",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/MusicBrainz",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/MusicBrainz",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/musicBrainz",
           "container": "/data"
         }
       ]
@@ -1797,7 +1797,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Muximux",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Muximux",
           "container": "/config"
         }
       ]
@@ -1827,15 +1827,15 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Mylar",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Mylar",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/torrents",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/torrents",
           "container": "/downloads"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Comics",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Comics",
           "container": "/comics"
         }
       ]
@@ -1865,11 +1865,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Nzbget",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Nzbget",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Downloads",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Downloads",
           "container": "/downloads"
         }
       ]
@@ -1899,11 +1899,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Nzbhydra2",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Nzbhydra2",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Downloads",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Downloads",
           "container": "/downloads"
         }
       ]
@@ -1975,7 +1975,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Nginx",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Nginx",
           "container": "/config"
         }
       ]
@@ -2000,11 +2000,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Nginx-Proxy/data",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Nginx-Proxy/data",
           "container": "/data"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Nginx-Proxy/letsencrypt",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Nginx-Proxy/letsencrypt",
           "container": "/etc/letsencrypt"
         }
       ]
@@ -2034,7 +2034,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/OScam",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/OScam",
           "container": "/config"
         }
       ]
@@ -2064,7 +2064,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Ombi",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Ombi",
           "container": "/config"
         }
       ]
@@ -2099,7 +2099,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/OpenVPN-AS",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/OpenVPN-AS",
           "container": "/config"
         }
       ]
@@ -2129,7 +2129,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Organizr",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Organizr",
           "container": "/config"
         }
       ]
@@ -2159,7 +2159,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Overseerr",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Overseerr",
           "container": "/config"
         }
       ]
@@ -2251,7 +2251,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Passky-Server",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Passky-Server",
           "container": "/var/www/html/databases"
         }
       ]
@@ -2314,15 +2314,15 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Pictures",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Pictures",
           "container": "/Pictures"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Photoshow/Thumbs",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Photoshow/Thumbs",
           "container": "/Thumbs"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/PhotoShow",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/PhotoShow",
           "container": "/config"
         }
       ]
@@ -2347,11 +2347,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/PiHole",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/PiHole",
           "container": "/etc/pihole"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/PiHole/DNS",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/PiHole/DNS",
           "container": "/etc/dnsmasq.d"
         }
       ]
@@ -2381,13 +2381,13 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/PiWigo",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/PiWigo",
           "container": "/config"
         }
       ]
     },
     {
-      "categories": ["Video", "Music", "Photos"],
+      "categories": ["Video", "music", "Photos"],
       "description": "Your favorite movies, TV, music, web shows, podcasts, and more, all streamed to your favorite screens.",
       "env": [
         {
@@ -2416,15 +2416,15 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Plex",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Plex",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/media/tv",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/media/tv",
           "container": "/tv"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/media/movies",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/media/movies",
           "container": "/movies"
         }
       ]
@@ -2459,7 +2459,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/PlexRequests",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/PlexRequests",
           "container": "/config"
         }
       ]
@@ -2489,11 +2489,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/ProjectSend",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/ProjectSend",
           "container": "/data"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/ProjectSend",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/ProjectSend",
           "container": "/config"
         }
       ]
@@ -2512,7 +2512,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/ProtonMail-Bridge",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/ProtonMail-Bridge",
           "container": "/root"
         }
       ]
@@ -2542,7 +2542,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Prowlarr",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Prowlarr",
           "container": "/config"
         }
       ]
@@ -2572,11 +2572,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Pydio",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Pydio",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Pydio",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Pydio",
           "container": "/data"
         }
       ]
@@ -2606,11 +2606,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/qBittorrent",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/qBittorrent",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data",
           "container": "/data"
         }
       ]
@@ -2640,7 +2640,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Quassel-core",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Quassel-core",
           "container": "/config"
         }
       ]
@@ -2670,11 +2670,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Radarr",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Radarr",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/media/movies",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/media/movies",
           "container": "/data"
         }
       ]
@@ -2692,7 +2692,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/ReactiveResume",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/ReactiveResume",
           "container": "/usr/src/app"
         }
       ]
@@ -2721,14 +2721,14 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Resilio-Sync",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Resilio-Sync",
           "container": "/config"
         },
         {
           "container": "/sync"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Downloads",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Downloads",
           "container": "/downloads"
         }
       ]
@@ -2758,11 +2758,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/ruTorrent",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/ruTorrent",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/torrents",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/torrents",
           "container": "/downloads"
         }
       ]
@@ -2792,15 +2792,15 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Sabnzbd",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Sabnzbd",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/usenet",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/usenet",
           "container": "/downloads"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/usenet/incomplete",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/usenet/incomplete",
           "container": "/incomplete-downloads"
         }
       ]
@@ -2818,7 +2818,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Shiori",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Shiori",
           "container": "/srv/shiori"
         }
       ]
@@ -2848,15 +2848,15 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/SickChill",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/SickChill",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/torrents",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/torrents",
           "container": "/downloads"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/media/tv",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/media/tv",
           "container": "/tv"
         }
       ]
@@ -2886,15 +2886,15 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/SickGear",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/SickGear",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/media/tv",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/media/tv",
           "container": "/tv"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/torrents",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/torrents",
           "container": "/downloads"
         }
       ]
@@ -2924,11 +2924,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Smokeping",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Smokeping",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Smokeping",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Smokeping",
           "container": "/data"
         }
       ]
@@ -2947,7 +2947,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Snibox",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Snibox",
           "container": "/app/db/database"
         }
       ]
@@ -2977,7 +2977,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Sonarr",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Sonarr",
           "container": "/config"
         },
         {
@@ -2985,7 +2985,7 @@
           "container": "/dev/rtc"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/torrents",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/torrents",
           "container": "/data"
         }
       ]
@@ -3015,7 +3015,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Syncthing",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Syncthing",
           "container": "/config"
         },
         {
@@ -3049,11 +3049,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Logs",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Logs",
           "container": "/logs"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Tautulli",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Tautulli",
           "container": "/config"
         }
       ]
@@ -3083,7 +3083,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/TheLounge",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/TheLounge",
           "container": "/config"
         }
       ]
@@ -3101,7 +3101,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/TiddlyWiki",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/TiddlyWiki",
           "container": "/var/lib/tiddlywiki"
         }
       ]
@@ -3131,7 +3131,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/tt-rss",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/tt-rss",
           "container": "/config"
         }
       ]
@@ -3161,11 +3161,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Transmission",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Transmission",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/Downloads",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Files/Downloads",
           "container": "/downloads"
         },
         {
@@ -3220,7 +3220,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/data/torrents",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/data/torrents",
           "container": "/data"
         },
         {
@@ -3254,7 +3254,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/TVHeadend",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/TVHeadend",
           "container": "/config"
         },
         {
@@ -3319,7 +3319,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/UptimeKuma",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/UptimeKuma",
           "container": "/app/data"
         }
       ]
@@ -3358,7 +3358,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Unifi",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Unifi",
           "container": "/config"
         }
       ]
@@ -3406,11 +3406,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/WebGrabPlus",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/WebGrabPlus",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/WebGrabPlus",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/WebGrabPlus",
           "container": "/data"
         }
       ]
@@ -3428,7 +3428,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Whoogle",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Whoogle",
           "container": "/config"
         }
       ]
@@ -3446,11 +3446,11 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Wikijs",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Wikijs",
           "container": "/config"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/Wikijs/data",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Wikijs/data",
           "container": "/data"
         }
       ]
@@ -3490,23 +3490,23 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/YTDLM",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/YTDLM",
           "container": "/app/appdata"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Youtube/Video",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Youtube/Video",
           "container": "/app/video"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Youtube/Subscriptions",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Youtube/Subscriptions",
           "container": "/app/subscriptions"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Youtube/Users",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Youtube/Users",
           "container": "/app/users"
         },
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Youtube/Audio",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/Youtube/Audio",
           "container": "/app/audio"
         }
       ]
@@ -3536,7 +3536,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/srv/dev-disk-by-uuid-018c3079-d2fb-4e41-9797-fb23103cf6d9/portainer/Files/AppData/Config/ZNC",
+          "bind": "/srv/dev-disk-by-uuid-4d4f9cf6-5016-4f66-97fa-31a47e1b8291/raid1/ZNC",
           "container": "/config"
         }
       ]
